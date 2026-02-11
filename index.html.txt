@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Handsome</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+
+<div class="screen active" id="screen1">
+  <h1 class="title">Hiii Welcome Handsome</h1>
+  <div class="girl-wrap">
+    <img src="assets/girl.png" class="girl">
+  </div>
+  <button class="main-btn" onclick="goTo(2)">Continue</button>
+</div>
+
+<div class="screen" id="screen2">
+  <h1 class="title">Happy Birthday Baby</h1>
+  <p class="sub">I have a small gift for you</p>
+  <p class="sub">But before that you need to answer this</p>
+  <button class="main-btn" onclick="goTo(3)">Okay</button>
+</div>
+
+<div class="screen" id="screen3">
+  <h2 class="question">Are you happy with me?</h2>
+  <div class="btn-group">
+      <button class="yes-btn" onclick="yesClicked()">Yes</button>
+      <button class="no-btn" id="noBtn">No</button>
+  </div>
+</div>
+
+<div class="screen" id="screen4">
+  <h2 class="title">I knew you would say yes</h2>
+  <p class="sub">Good choice</p>
+  <div class="couple-wrap">
+    <img src="assets/couple.png" class="couple">
+    <div class="mini-heart"></div>
+  </div>
+  <button class="main-btn" onclick="goTo(5)">Where is my gift</button>
+</div>
+
+<div class="screen" id="screen5">
+  <h2 class="title">Here is your reward</h2>
+  <div class="gift-box" onclick="openGift()">
+      <img src="assets/gift.png" class="gift-img">
+  </div>
+</div>
+
+<div class="screen" id="screen6">
+  <div class="letter">
+      <h2>To My Love</h2>
+      <p id="loveText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
